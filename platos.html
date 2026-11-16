@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sabores de Colombia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="cabecera">
+    <div class="contenedor cabecera-interior">
+      <a class="marca" href="index.html">Mini Portal de Colombia</a>
+      <nav aria-label="Principal">
+        <ul class="menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="departamentos.html">Departamentos</a></li>
+          <li><a href="platos.html" aria-current="page">Platos típicos</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="franja" aria-hidden="true"></div>
+  </header>
+
+  <main class="contenedor">
+    <section class="encabezado-pagina">
+      <h1>Sabores de Colombia</h1>
+      <p id="total" class="total" aria-live="polite"></p>
+    </section>
+
+    <section id="lista-platos" class="rejilla" aria-label="Lista de platos típicos"></section>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <p>Datos de <a href="https://api-colombia.com/" target="_blank" rel="noopener">api-colombia.com</a>. Proyecto de Juan Diego Velandia Guerrero.</p>
+    </div>
+  </footer>
+
+  <script src="js/comun.js"></script>
+  <script src="js/platos.js"></script>
+</body>
+</html>
